@@ -19,4 +19,7 @@
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
-[![Product Name Screen Shot](/Doc/zeekPorfolio.gif)](https://www.zeekse.xyz)
+![gif](src/Doc/zeekPorfolio.gif)
+
+
+
