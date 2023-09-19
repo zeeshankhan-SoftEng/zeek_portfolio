@@ -63,7 +63,7 @@ const App = () => {
     <BrowserRouter >
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
-        <Route path="/home" exact element={<Home ref={titleRef} />} />
+        <Route path="/" exact element={<Home ref={titleRef} />} />
       </Routes>
 
       <Footer>

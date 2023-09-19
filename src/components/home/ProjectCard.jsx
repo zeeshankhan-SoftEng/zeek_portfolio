@@ -13,9 +13,7 @@ const ProjectCard = ({ value }) => {
     languages_url,
     pushed_at,
   } = value;
-  return (
-    <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+  return(name==="zeeshankhan-SoftEng")?<Skeleton />: (<Col md={6}><Card className="card shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
           <Card.Title as="h5">{name || <Skeleton />} </Card.Title>
           <Card.Text>{(!description) ? "" : description || <Skeleton count={3} />} </Card.Text>
@@ -34,7 +32,7 @@ const ProjectCard = ({ value }) => {
         </Card.Body>
       </Card>
     </Col>
-  );
+);
 };
 
 const CardButtons = ({ svn_url }) => {

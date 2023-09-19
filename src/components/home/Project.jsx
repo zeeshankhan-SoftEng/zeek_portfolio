@@ -37,7 +37,9 @@ const Project = ({ heading, username, length, specfic }) => {
       try {
         for (let repoName of specfic) {
           const response = await axios.get(`${specficReposAPI}/${repoName}`);
+          console.log(response)
           repoList.push(response.data);
+         
         }
       } catch (error) {
         console.error(error.message);
@@ -53,6 +55,7 @@ const Project = ({ heading, username, length, specfic }) => {
   useEffect(() => {
     fetchRepos();
   }, [fetchRepos]);
+ 
 
   return (
     <Jumbotron fluid id="projects" className="bg-light m-0">
@@ -61,6 +64,7 @@ const Project = ({ heading, username, length, specfic }) => {
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
+              
               <ProjectCard
                 key={`project-card-${index}`}
                 id={`project-card-${index}`}

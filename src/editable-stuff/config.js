@@ -64,7 +64,7 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "zeeshankhan-SoftEng", //i.e."johnDoe12Gh"
-  reposLength: 4,
+  reposLength: 10,
   specificRepos: [],
 };
 
@@ -76,7 +76,7 @@ const skills = {
     { name: "Python", value: 90 },
     { name: "PostgreSQL", value: 75 },
     { name: "Nodejs", value: 80 },
-    { name: "Data Structures", value: 80 },
+    { name: "MongoDB", value: 80 },
     { name: "JavaScript", value: 90 },
     { name: "React", value: 85 },
     { name: "HTML/CSS", value: 95 },
